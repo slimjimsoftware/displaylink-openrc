@@ -1,0 +1,21 @@
+#!/sbin/openrc-run
+# Copyright 1999-2017 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+command="/usr/lib/displaylink/DisplayLinkManager"
+command_background=true
+pidfile=/var/run/displaylink.pid
+name="DisplayLink Manager"
+
+depend() {
+	after sddm
+}
+
+start_pre() {
+	modprobe evdi
+}
+
+stop_post() {
+	rmmod evdi
+}
+
