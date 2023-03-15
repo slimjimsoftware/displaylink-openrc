@@ -15,7 +15,3 @@ start_pre() {
 	modprobe evdi
 }
 
-stop_post() {
-	rmmod evdi
-}
-

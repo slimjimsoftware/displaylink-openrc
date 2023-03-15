@@ -10,7 +10,7 @@ depends=('displaylink')
 source=(
 	rc-displaylink 
         displaylink-sleep.sh)
-sha256sums=('0d3a42c9d8ef89d5288a74bf2f4b8a8a0c745040a63d4a390e8f44404d600c58'
+sha256sums=('fd71de688c773ad9ffe1bc7cd13910c85835d403e0f806d2257f27ba783b03d1'
             '8be4ab7616e38f91746bdd3e7fafe9004322a8be8e6722389746df9868d576e0')
 
 package() {
